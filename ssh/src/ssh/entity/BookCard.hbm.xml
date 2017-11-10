@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="ssh.entity.BookCard" table="BookCard">
+		<!-- 卡号 -->
+		<id name="cid" column="cid">
+			<generator class="native"></generator>
+		</id>
+		<!-- 姓名 -->
+		<property name="name" column="name"></property>
+			<!-- 性别 -->
+		<property name="sex" column="sex"></property>
+		<!-- 办卡日期 -->
+		<property name="cardDate" column="cardDate"></property>
+		<!-- 押金 -->
+		<property name="deposit" column="deposit"></property>
+	</class>
+</hibernate-mapping>
